@@ -17,7 +17,7 @@ public class MenuPrincipal : MonoBehaviour
     // Cargar o dirigir a la ventana de las Habilidades
     public void Habilidades() // Funcion publica Habilidades
     {
-        SceneManager.LoadScene(""); // Cargar escena Habilidades
+        SceneManager.LoadScene("Assets/Scenes/Pantalla Habilidades.unity"); // Cargar escena Habilidades
     }
 
 

@@ -7,6 +7,11 @@ public class MenuPausa : MonoBehaviour
     [SerializeField] private GameObject menudepausa;
 
     [SerializeField] private GameObject cajadehabilidad;
+
+    void Start()
+    {
+        Time.timeScale = 1f;
+    }
     public void Pausa()
     {
         Time.timeScale = 0f;
@@ -24,5 +29,9 @@ public class MenuPausa : MonoBehaviour
         cajadehabilidad.SetActive(true);
     }
 
+    public void Hogar()
+    {
+        SceneManager.LoadScene("Assets/Scenes/Pantalla Inicial.unity");
+    }
   
 }
